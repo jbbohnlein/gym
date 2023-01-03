@@ -1,0 +1,480 @@
+
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navbar */
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    z-index: 1;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin-right: 3%;
+    height: 100%;
+}
+
+.nav-item {
+    font-size: 1.2em;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navlink {
+    color: rgb(233, 229, 20);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    text-shadow: -1px 1px 2px black,
+                  1px 1px 0 black,
+                  1px -1px 0 black,
+                  -1px -1px 0 black;
+}
+
+a:hover {
+    color: rgb(233, 20, 20);
+}
+
+/* Background */
+.page-title {
+    z-index: -1;
+    height: 14em;
+    color: white;
+    text-shadow: -1px 1px 2px black,
+                  1px 1px 0 black,
+                  1px -1px 0 black,
+                  -1px -1px 0 black;
+}
+
+.background {
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    filter: grayscale(100%);
+}
+
+.title-logo {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Page */
+
+.about-tile {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+}
+
+.about-header {
+    padding: 10%;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    width: 80%;
+    height: 150px;
+}
+
+.page-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-tile-dimension {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    text-shadow: -1px 1px 2px black,
+                  1px 1px 0 black,
+                  1px -1px 0 black,
+                  -1px -1px 0 black;
+}
+
+.about-top {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container-top {
+    display: flex;
+    max-height: 400px;
+}
+
+.intertext-link {
+    color: rgb(233, 229, 20);
+    text-decoration: none;
+}
+
+.image-top {
+    width: 300px;
+    height: 100%;
+}
+
+.about-gym-text {
+    width: 60%;
+    margin: 5%;
+}
+
+.about-gym {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.page-title {
+    height: 1.4em;
+}
+
+.about-middle {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.about-offerings-text {
+    width: 60%;
+    margin: 5%;
+}
+
+.about-offerings {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.image-container-middle {
+    padding: 10px;
+}
+
+.image-middle {
+    width: 400px;
+}
+
+/* Services Page */
+
+.services-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    /* Need to adjust size for medium and small screens */
+    color: white;
+    text-shadow: -1px 1px 2px black,
+                  1px 1px 0 black,
+                  1px -1px 0 black,
+                  -1px -1px 0 black;
+    padding-top: 15%;
+    line-height: 2%;
+}
+
+.wrap-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 60px;
+}
+
+.box {
+    max-width: 300px;
+    object-fit: cover;
+    max-height: 300px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.grid-image {
+    /* object-fit: cover; */
+    width: 100%;
+    max-height: 200px;
+    align-content: bottom;
+    justify-content: center;
+    /* width: 80%;
+    max-height: 150px; */
+}
+
+.grid-text {
+    text-decoration: none;
+    color: rgb(216, 232, 100);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Rates Page */
+
+.rates-table {
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    text-shadow: -1px 1px 2px black,
+                  1px 1px 0 black,
+                  1px -1px 0 black,
+                  -1px -1px 0 black;
+}
+
+.rates-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+.rates-header {
+    color: white;
+    line-height: 2%;
+}
+
+.rates-container {
+    background-color: rgba(0,0,0,0.7);
+    padding: 3%;
+}
+
+td, th {
+    color: rgb(216, 232, 100);
+    border: 1px solid white;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    font-weight: 900;
+}
+
+/* Sign-in Page*/
+
+.sign-in-section {
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    text-shadow: -1px 1px 2px black,
+                  1px 1px 0 black,
+                  1px -1px 0 black,
+                  -1px -1px 0 black;
+}
+
+.sign-in-title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 4em;
+}
+
+.sign-in-header {
+    color: white;
+    line-height: 2%;
+}
+
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: rgba(0,0,0,0.7);
+    text-shadow: -1px 1px 2px black,
+                  1px 1px 0 black,
+                  1px -1px 0 black,
+                  -1px -1px 0 black;
+}
+
+.conditions-link {
+    color: rgb(216, 232, 100);
+}
+
+
+/* Footer */
+
+footer {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.bottom {
+    background-color: rgba(0, 0, 0, 0.493);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.footer-image-section {
+    width: 25%;
+    justify-content: center;
+}
+
+.footer-image {
+    width: 250px;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.footinfo {
+    display: flex;
+    padding-left: 2%;
+    flex-direction: column;
+    width: 25%;
+    font-size: 1em;
+}
+
+.foothead {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.foothours {
+    display: flex;
+    padding-left: 2%;
+    flex-direction: column;
+    width: 25%;
+    font-size: 1em;
+}
+
+.footlinks {
+    display: flex;
+    padding-left: 2%;
+    flex-direction: column;
+    width: 25%;
+    font-size: 1em;
+}
+
+.footlink {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+    }
+
+    .background{
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        filter: grayscale(100%);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrap-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 3%;
+        padding-bottom: 10%;
+    }
+
+    .footer-image-section {
+        width: 40%;
+    }
+
+    .services-header {
+        font-size: 2em;
+        padding-top: 20%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-header {
+        margin-bottom: 11%;
+    }
+
+    .about-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-middle {
+        display: flex;
+        flex-direction: column;
+    }
+}
